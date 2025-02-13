@@ -230,10 +230,6 @@ li > a {
     width: 100%;
 }
 
-#PROMOSSSS {
-    display: none;
-}
-
 .catalogo {
     display: grid;
 }
@@ -320,10 +316,6 @@ li > a {
 
     .entre-em-contato h1 {
         max-width: 14.6em
-    }
-
-    #card_03 {
-        display: none;
     }
 
     .catalogo-promos ul {
@@ -431,14 +423,15 @@ li > a {
         padding-top: 1em;
     }
 
-    #card_03, #card_02 {
-        display: none;
-    }
-
     .catalogo-promos ul {
         display: grid;
         grid-template-columns: 90%;
         padding-left: 15px;
+        row-gap: 1%;
+    }
+
+    #card_03 {
+        margin-bottom: 20px;
     }
 
     .menu-hamburguer {
