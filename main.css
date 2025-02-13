@@ -1,0 +1,451 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color:rgb(33, 33, 36);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-height: 10em;
+}
+
+header h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.logo-nome{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 16px;
+}
+
+header a:hover {
+    color: rgb(33, 33, 36);
+    background-color: aqua;
+    border-radius: 5%;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header ul {
+    margin-bottom: 0;
+    font-size: 1.2em;
+}
+
+header ul > li {
+    float: left; /* O ESPAÇAMENTO ENTRE OS ITENS SOME */
+    list-style: none;
+}
+
+.clear { /* CORRIGIR ESPAÇAMENTO */
+    clear: both;
+}
+
+.sobre-a-loja, .produtos, .promos {
+    margin-bottom: 56px;
+    display: flex;
+}
+
+.sobre-a-loja h1 {
+    margin-bottom: 36px;
+}
+
+.sobre-a-loja img {
+    max-width: 520px;
+    margin-right: 16px;
+    border-radius: 3%;
+}
+
+article {
+    display: block;
+    font-size: 1.5em;
+    margin-right: 8px;
+}
+
+article > h1 {
+    border-bottom: 2px solid darkcyan;
+    padding: 5px;
+}
+
+.catalogo {
+    display: grid;
+}
+
+.catalogo ul {
+    display: grid;
+    grid-template-columns: repeat(4, 25.4%);
+    column-gap: 1%;
+    row-gap: 5%;
+    padding-left: 0;
+}
+
+.catalogo li {
+    list-style: none;
+    background-color: hsl(180, 100%, 27%, 25%);
+    border: 1px solid #fff;
+    border-radius: 3%;
+}
+
+.catalogo a:link, .catalogo a:visited, .catalogo a:active {
+    color: black;
+}
+
+.catalogo a:hover {
+    color: rgb(33, 33, 36);
+}
+
+.infos-produto {
+    margin-left: 8px;
+    margin-bottom: 8px;
+}
+
+.infos-produto h3 {
+    font-size: 0.9em;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+    margin-left: 8px;
+}
+
+.infos-produto p {
+    font-size: 0.7em;
+    margin-left: 8px;
+}
+
+li > a {
+    text-decoration: none;
+}
+
+.catalogo button {
+    width: 90%;
+    margin-left: 8px;
+    margin-top: 8px;
+    height: 30px;
+    font-size: 0.6em;
+    font-weight: bold;
+    background-color:darkcyan;
+    color: #fff;
+    border-style: none;
+}
+
+.catalogo button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: darkcyan;
+}
+
+.entre-em-contato{
+    background-color: rgb(33, 33, 36);
+    color: #fff;
+    margin-top: 30px;
+}
+
+.entre-em-contato > .aba-contato {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.entre-em-contato form {
+    padding: 10px;
+    font-size: 0.8em;
+}
+
+.entre-em-contato input, .entre-em-contato button {
+    width: 30em;
+    margin-bottom: 1em;
+}
+
+.entre-em-contato input {
+    border-color: aqua;
+}
+
+.entre-em-contato button {
+    text-transform: uppercase;
+}
+
+.parte-carrossel{
+    margin-bottom: 30px;
+}
+
+.carousel-item img {
+    max-height: 30em;
+}
+
+.card-body {
+    display: flex;
+    padding: 0;
+    margin-left: 0.6em;
+}
+.card-body h3, .card-body h5 {
+    margin-right: 8px;
+}
+
+.card-body h5{
+    opacity: 60%;
+}
+
+.card-title{
+    margin-left: 0.6em;
+    font-weight: bold;
+}
+
+.card img {
+    max-height: 20em;
+    max-width: 15em;
+    padding: 0.8em;
+}
+
+.card .btn {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5;
+    border-bottom-right-radius: 5;
+    width: 100%;
+}
+
+#PROMOSSSS {
+    display: none;
+}
+
+.catalogo {
+    display: grid;
+}
+
+.catalogo-promos ul {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    column-gap: 1%;
+    row-gap: 5%;
+    padding-left: 0;
+}
+
+.catalogo-promos li {
+    list-style: none;
+    border: 1px solid #fff;
+    border-radius: 3%;
+}
+
+.menu-pequeno {
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width:768px) and (max-width: 1023px) { /*! TABLET !*/
+    .container {
+        max-width: 90%;
+    }
+
+    .sobre-a-loja, .produtos {
+        margin-bottom: 56px;
+        display: block;
+    }
+
+    .sobre-a-loja img {
+        max-width: 680px;
+        margin: 16px
+    }
+
+    .catalogo {
+        margin-bottom: 20px;
+    }
+
+    .catalogo ul {
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+        row-gap: 2%;
+        padding-left: 0;
+        font-size: 1em;
+    }
+
+    .catalogo li {
+        padding: 1em;
+    }
+
+    .catalogo h3 {
+        font-size: 1em;
+    }
+
+    button {
+        width: 90%;
+        margin-top: 20px;
+        font-size: 0.8em;
+        padding: 0.5em;
+    }
+
+    ul img {
+        margin-left: 0.9em;
+    }
+
+    .entre-em-contato input, .entre-em-contato button {
+        width: 30em;
+        margin-bottom: 1em;
+    }
+
+    .entre-em-contato form {
+        padding: 10px;
+        font-size: 1.2em;
+    }
+
+    .entre-em-contato > .aba-contato {
+        margin-left: 5em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .entre-em-contato h1 {
+        max-width: 14.6em
+    }
+
+    #card_03 {
+        display: none;
+    }
+
+    .catalogo-promos ul {
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+        row-gap: 2%;
+        padding-left: 0;
+        font-size: 1em;
+    }
+
+    .catalogo-promos li {
+        padding: 1em;
+    }
+
+    .catalogo-promos h3 {
+        font-size: 1em;
+    }
+
+    .card li img {
+        margin: 0%;
+        max-width: 12em;
+    }
+
+    .card .btn {
+        border-radius: 5%;
+        width: 100%;
+    }
+
+    .menu-hamburguer {
+        display: block;
+    }
+
+    #links-rapidos {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) { /*! CELULAR !*/
+    .container {
+        max-width: 90%;
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    .sobre-a-loja {
+        margin-bottom: 56px;
+        display: block;
+    }
+
+    .sobre-a-loja img {
+        max-width: 300px;
+        margin: 16px
+    }
+
+    article {
+        font-size: 1em;
+    }
+
+    .aba-contato > h1{
+        max-width: 300px;
+    }
+
+    .catalogo ul {
+        display: block;
+        padding-left: 0;
+    }
+
+    .catalogo li {
+        margin: 0 auto;
+        padding: 0.7em;
+        margin-bottom: 1em;
+    }
+
+    .infos-produto {
+        font-size: 1.5em;
+        margin: 10px 0;
+    }
+
+    ul img {
+        margin-left: 15px;
+    }
+
+    button {
+        width: 90%;
+        margin-top: 20px;
+        margin-left: 13px;
+        font-size: 0.8em;
+        padding: 0.5em;
+    }
+
+    .entre-em-contato input, .entre-em-contato button {
+        width: 18em;
+        margin-bottom: 1em;
+    }
+
+    .entre-em-contato form {
+        padding: 10px;
+        font-size: 1.2em;
+    }
+
+    .entre-em-contato > .aba-contato {
+        padding-left: 2em;
+        padding-top: 1em;
+    }
+
+    #card_03, #card_02 {
+        display: none;
+    }
+
+    .catalogo-promos ul {
+        display: grid;
+        grid-template-columns: 90%;
+        padding-left: 15px;
+    }
+
+    .menu-hamburguer {
+        display: block;
+    }
+
+    #links-rapidos {
+        display: none;
+    }
+}

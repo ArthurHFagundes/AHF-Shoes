@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="shortcut icon" type="imagex/png" href="./images/logo.png">
+    <title> AHF SHOES </title>
+</head>
+<body>
+    <header>
+        <div class="container menu">
+            <div class="logo-nome">
+                <img src="./images/logo.png" alt="logo_ahf_shoes">
+                <h1> AHF SHOES </h1>
+            </div>
+            <ul id="links-rapidos">
+                <li>
+                    <a href="#sobre-a-loja"> SOBRE A LOJA </a>
+                </li>
+                <li>
+                    <a href="#produtos"> PRODUTOS </a>
+                </li>
+                <li>
+                    <a href="#entre-em-contato"> CONTATO </a>
+                </li>
+            </ul>
+            <button data-bs-toggle="dropdown" class="menu-pequeno btn btn-pill btn-dark d-sm-block d-md-block d-lg-none"> <!--TODO-->
+                <b> MENU </b>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                        <a href="#sobre-a-loja"> SOBRE A LOJA </a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#produtos"> PRODUTOS </a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#entre-em-contato"> CONTATO </a>
+                    </li>
+            </button> <!--TODO-->
+        </div>
+        <div class="clear"></div>
+    </header>
+    <section class="parte-carrossel">
+        <div id="carrossel" class="carousel slide" data-bs-ride="carousel" wrap-boolean="true" pause-boolean="hover"> <!-- PARA DEIXAR ATIVO --> <!--* (class="carousel-fade") DEIXA A ANIMAÇÃO COMO FADE-OUT -->
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active"> <!-- PARA APARECER INICALMENTE -->
+                    <img class="d-block w-100" src="./images/banner1.jpg"> <!-- (d-block w-100) Display: block; Width: 100% -->
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./images/banner2.jpg">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./images/banner3.jpg">
+                </div>
+            </div>
+            <div class="carousel-indicators">
+                <button data-bs-target="#carrossel" type="button" data-bs-slide-to="0" class="active"></button>
+                <button data-bs-target="#carrossel" type="button" data-bs-slide-to="1"></button>
+                <button data-bs-target="#carrossel" type="button" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <main>
+            <section class="sobre-a-loja" id="sobre-a-loja">
+                <img src="./images/loja.jpg">
+                <article>
+                    <h1> Sobre a loja </h1>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore laborum vitae ea quis. Nesciunt, delectus asperiores itaque porro numquam, officia commodi ut est ullam id dolorum voluptates harum culpa quisquam.
+                    </p>
+                </article>
+            </section>
+            <section id="produtos">
+                <article>
+                    <h1 class="produtos"> Destaques </h1>
+                    <div class="catalogo">
+                        <ul>
+                            <li>
+                                <a href="https://www.centauro.com.br/tenis-daily-4-0---adidas---unissex-m14p88-mktp.html">
+                                    <img src="./images/tenis adidas.png">
+                                    <div class="infos-produto">
+                                        <h3> Tênis Adidas Daily </h3>
+                                        <h3> R$ 400,00 </h3>
+                                        <p> descrição do produto </p>
+                                        <button class="btn btn-pill">Adicionar ao carrinho</button>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.amazon.com.br/T%C3%AAnis-Adidas-Racer-TR23-Marinho/dp/B0CGH76Y1G">
+                                    <img src="./images/tenis adidas azul marinho.png">
+                                    <div class="infos-produto">
+                                        <h3> Tênis Adidas Racer </h3>
+                                        <h3> R$ 720,00 </h3>
+                                        <p> descrição do produto </p>
+                                        <button class="btn btn-pill">Adicionar ao carrinho</button>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.shop2gether.com.br/tenis-masculino-mc-trainer-2-preto-209424">
+                                    <img src="./images/tenis nike.png">
+                                    <div class="infos-produto">
+                                        <h3> Nike MC Trainer </h3>
+                                        <h3> R$ 600,00 </h3>
+                                        <p> descrição do produto </p>
+                                        <button class="btn btn-pill">Adicionar ao carrinho</button>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://produto.mercadolivre.com.br/MLB-3877586225-vans-knu-azul-navy-original-_JM">
+                                    <img src="./images/tenis vans.png">
+                                    <div class="infos-produto">
+                                        <h3> Vans Knu Azul Navy </h3>
+                                        <h3> R$ 749,00 </h3>
+                                        <p> descrição do produto </p>
+                                        <button class="btn btn-pill">Adicionar ao carrinho</button>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+            <section id="produtos">
+                <article>
+                    <h1 class="produtos"> Promoções </h1>
+                    <div class="catalogo-promos">
+                        <ul>
+                            <div class="card">
+                                <li>
+                                    <img src="https://imgcentauro-a.akamaihd.net/768x768/96943319A9.jpg">
+                                    <h4 class="card-title"> Tênis adidas Lite Racer 3.0 - Masculino </h4>
+                                        <div class="card-body">
+                                            <h3> R$ 284,90 </h3>
+                                            <s><h5> R$ 314,90 </h5></s>
+                                        </div>
+                                    <a href="https://www.centauro.com.br/tenis-adidas-lite-racer-3-0-masculino-969433.html" class="btn btn-primary"> Adicionar ao Carrinho </a>
+                                </li>
+                            </div>
+                            <div id='card_02' class="card">
+                                <li>
+                                    <img src="https://imgcentauro-a.akamaihd.net/768x768/98140351A9.jpg">
+                                    <h4 class="card-title"> Tênis adidas Grand Court 2.0 - Masculino </h4>
+                                        <div class="card-body">
+                                            <h3> R$ 279,99 </h3>
+                                            <s><h5> R$ 399,99 </h5></s>
+                                        </div>
+                                    <a href="https://www.centauro.com.br/tenis-adidas-grand-court-2-0-masculino-981403.html" class="btn btn-primary"> Adicionar ao Carrinho </a>
+                                </li>
+                            </div>
+                            <div id='card_03' class="card">
+                                <li>
+                                    <img src="https://imgcentauro-a.akamaihd.net/768x768/9859823LA2.jpg">
+                                    <h4 class="card-title"> Tênis ASICS Gel-Excite 10 Masculino </h4>
+                                        <div class="card-body">
+                                            <h3> R$ 349,99 </h3>
+                                            <s><h5> R$ 459,99 </h5></s>
+                                        </div>
+                                    <a href="https://www.centauro.com.br/tenis-asics-gel-excite-10-mas-985982.html?cor=3L" class="btn btn-primary"> Adicionar ao Carrinho </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+    <section class="entre-em-contato" id="entre-em-contato">
+        <article class="aba-contato">
+            <h1 class="contato"> Entre em contato </h1>
+            <form>
+                <label for="nome" class="form-label"> Seu nome: </label> <!-- (class="form-label") PARA ESTILIZAÇÃO DO "LABEL" NO BS -->
+                <input id="nome" class="form-control" type="text"> <!-- (class="form-control") PARA ESTILIZAÇÃO DO "INPUT" NO BS -->
+                <label for="email" class="form-label"> Seu e-mail: </label>
+                <input id="email" class="form-control" type="email">
+                <label for="telefone" class="form-label"> Seu telefone: </label>
+                <input id="telefone" class="form-control" type="tel">
+                <button class="btn btn-success"> Enviar </button>
+            </form>
+        </article>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
